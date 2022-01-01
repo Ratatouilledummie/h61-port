@@ -1,0 +1,2 @@
+config VENDOR_GIGABYTE_TECHNOLOGY_CO.__LTD
+	bool "Gigabyte Technology Co., Ltd."

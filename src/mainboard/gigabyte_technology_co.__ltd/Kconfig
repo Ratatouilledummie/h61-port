@@ -1,0 +1,16 @@
+if VENDOR_GIGABYTE_TECHNOLOGY_CO.__LTD
+
+choice
+	prompt "Mainboard model"
+
+source "src/mainboard/gigabyte_technology_co.__ltd/*/Kconfig.name"
+
+endchoice
+
+source "src/mainboard/gigabyte_technology_co.__ltd/*/Kconfig"
+
+config MAINBOARD_VENDOR
+	string
+	default "Gigabyte Technology Co., Ltd."
+
+endif # VENDOR_GIGABYTE_TECHNOLOGY_CO.__LTD
