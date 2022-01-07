@@ -5,25 +5,6 @@ choice
 
 source "src/mainboard/gigabyte_technology_co.__ltd/*/Kconfig.name"
 
-config BOARD_SPECIFIC_OPTIONS
-	def_bool y
-	select BOARD_ROMSIZE_KB_4096
-	select HAVE_ACPI_RESUME
-	select HAVE_ACPI_TABLES
-	select INTEL_INT15
-	select NORTHBRIDGE_INTEL_SANDYBRIDGE
-	select SERIRQ_CONTINUOUS_MODE
-	select SOUTHBRIDGE_INTEL_BD82X6X
-	select USE_NATIVE_RAMINIT
-	select SUPERIO_ITE_IT8728F
-	select MAINBOARD_HAS_LIBGFXINIT
-	select INTEL_GMA_HAVE_VBT
-	select HAVE_OPTION_TABLE
-	select HAVE_CMOS_DEFAULT
-
-config INTEL_GMA_VBT_FILE
-	default "src/mainboard/\$(MAINBOARDDIR)/data.vbt"
-
 endchoice
 
 source "src/mainboard/gigabyte_technology_co.__ltd/*/Kconfig"
