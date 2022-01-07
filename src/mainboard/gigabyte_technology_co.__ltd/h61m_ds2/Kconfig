@@ -11,7 +11,10 @@ config BOARD_SPECIFIC_OPTIONS
 	select SERIRQ_CONTINUOUS_MODE
 	select SOUTHBRIDGE_INTEL_BD82X6X
 	select USE_NATIVE_RAMINIT
+	select MAINBOARD_HAS_LIBGFXINIT
+	select HAVE_OPTION_TABLE
 
+	select HAVE_CMOS_DEFAULT
 config MAINBOARD_DIR
 	string
 	default "gigabyte_technology_co.__ltd/h61m_ds2"
